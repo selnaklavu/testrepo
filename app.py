@@ -51,6 +51,7 @@ class Handler(BaseHTTPRequestHandler):
   h1 {{ margin: 0 0 .5rem; font-size: 2rem; }}
   p {{ margin: .35rem 0; }}
   .meta {{ color: #94a3b8; font-size: .9rem; margin-top: 1.25rem; }}
+  .footer {{ color: #64748b; font-size: .8rem; margin-top: .75rem; }}
   code {{ color: #7dd3fc; }}
 </style></head>
 <body><div class="card">
@@ -58,6 +59,7 @@ class Handler(BaseHTTPRequestHandler):
   <p>version <code>{VERSION}</code></p>
   <p>host <code>{socket.gethostname()}</code></p>
   <p class="meta">try <code>/health</code> and <code>/api/info</code></p>
+  <p class="footer">running in the sandbox ✨</p>
 </div></body></html>"""
             self._send(200, page)
 
