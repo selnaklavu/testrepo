@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    # publish container port 8000 (a "web" port the platform recognizes) to an
+    # ephemeral host port, so many sessions can run side by side without clashing.
+    ports:
+      - "8000"
+    restart: unless-stopped
