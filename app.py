@@ -59,7 +59,7 @@ class Handler(BaseHTTPRequestHandler):
   <p>version <code>{VERSION}</code></p>
   <p>host <code>{socket.gethostname()}</code></p>
   <p class="meta">try <code>/health</code> and <code>/api/info</code></p>
-  <p class="footer">running in the sandbox ✨</p>
+  <p class="footer">running happily in the sandbox ✨</p>
 </div></body></html>"""
             self._send(200, page)
 
